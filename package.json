@@ -1,0 +1,33 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "Final project",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha --compilers js:babel-core/register tests",
+    "start": "nodemon index.js --exec babel-node",
+    "repo": "nyc --report=html mocha --compilers js:babel-core/register tests"
+  },
+  "author": "ManhDD5",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "csvtojson": "^1.1.7",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "md5": "^2.2.1",
+    "mongoose": "^4.11.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.0",
+    "chai-http": "^3.0.0",
+    "sinon": "^2.4.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
